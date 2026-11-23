@@ -5,7 +5,7 @@
 Android APK + 独立网页版。使用游戏文件来源的 890 Jump 外壳、原始 UV、原厂调色板与分层材质数据，支持离线旋转、缩放、平移和六个预设视角。
 
 - **APK 下载**：仓库右侧 Releases，下载 `890Jump-Android9-12-v1.0.0-beta.1.apk`。
-- **网页预览**：https://gaotain.github.io/890jump-mobile-viewer/
+- **网页预览**：https://vyskoyenebo.github.io/890jump-mobile-viewer/
 - 单指旋转；双指缩放、平移；双击复位；可切换船底、船尾视角、亮度和背景。
 - Android 最低版本 **9 / API 28**，面向 Android 9、10、11、12；需要设备 WebView 支持 WebGL / OpenGL ES 2.0。
 - APK 自带模型、贴图和 JavaScript，无广告、无账号、无联网权限。
