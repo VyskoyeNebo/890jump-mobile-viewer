@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-beta.1",
+  "minSdk": 28,
+  "targetSdk": 35,
+  "androidReleaseBuild": "passed",
+  "androidLintErrors": 0,
+  "androidLintWarnings": 4,
+  "offlineAssetsVerified": 147,
+  "apkBytes": 46814792,
+  "apkSha256": "5aebc94b5fbf12a65d83070aeec79ca0540a35aff48cc9e26d6e9ff6c0399c86",
+  "networkPermissions": false,
+  "realAndroidDeviceTests": false,
+  "browserPreliminaryLayeredRendering": "passed",
+  "latestMaterialBlendAndSpecularChangeVisualRecheck": "not completed: UI tools disconnected",
+  "releaseStatus": "beta pending final material review"
+}

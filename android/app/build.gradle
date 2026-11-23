@@ -1,0 +1,24 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.gaotain.origin890'
+    compileSdk 35
+    buildToolsVersion '35.0.0'
+    defaultConfig {
+        applicationId 'com.gaotain.origin890'
+        minSdk 28
+        targetSdk 35
+        versionCode 1
+        versionName '1.0.0-beta.1'
+    }
+    signingConfigs {
+        localRelease {
+            storeFile rootProject.file('../.signing/890jump.jks')
+            storePassword System.getenv('VIEWER_SIGN_PASSWORD') ?: ''
+            keyAlias 'origin890'
+            keyPassword System.getenv('VIEWER_SIGN_PASSWORD') ?: ''
+        }
+    }
+    buildTypes { release { minifyEnabled false; signingConfig signingConfigs.localRelease } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    lint { abortOnError true; checkReleaseBuilds true }
+}

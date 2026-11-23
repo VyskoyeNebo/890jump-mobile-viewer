@@ -1,0 +1,10 @@
+{
+  "source": "Game-file 890 Jump stock geometry and material profiles served by The Impound Paint Viewer",
+  "sourceURL": "https://theimpound.com/pages/paint-viewer?ship=890-jump&paint=stock",
+  "date": "2026-11-23",
+  "triangles": 734628,
+  "bytes": 22642868,
+  "textureImages": 140,
+  "materialProfiles": 106,
+  "renderer": "Independent Three.js implementation; third-party website renderer code is not included."
+}
