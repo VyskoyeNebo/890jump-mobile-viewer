@@ -1,10 +1,10 @@
 # 890 Jump 原厂配色 · 手机 3D 查看器
 
-**当前是测试版**。早期单贴图烘焙方案出现了玻璃和材质错误，已替换为独立分层材质。替换后的基础显示已经检查；最后一次金属反射与材质混合参数修正后，浏览器检查工具断连，尚未完成最终视觉复核。Android 9–12 也尚未逐版本真机实测。
+**当前是 beta.2 测试版**。玻璃已根据用户反馈改为深色吸光表面，修复了透明混合造成的浅灰色舷窗。早期单贴图烘焙方案出现了玻璃和材质错误，已替换为独立分层材质。替换后的基础显示已经检查；最后一次金属反射与材质混合参数修正后，浏览器检查工具断连，尚未完成最终视觉复核。Android 9–12 也尚未逐版本真机实测。
 
 Android APK + 独立网页版。使用游戏文件来源的 890 Jump 外壳、原始 UV、原厂调色板与分层材质数据，支持离线旋转、缩放、平移和六个预设视角。
 
-- **APK 下载**：仓库右侧 Releases，下载 `890Jump-Android9-12-v1.0.0-beta.1.apk`。
+- **APK 下载**：仓库右侧 Releases，下载 `890Jump-Android9-12-v1.0.0-beta.2.apk`。
 - **网页预览**：https://vyskoyenebo.github.io/890jump-mobile-viewer/
 - 单指旋转；双指缩放、平移；双击复位；可切换船底、船尾视角、亮度和背景。
 - Android 最低版本 **9 / API 28**，面向 Android 9、10、11、12；需要设备 WebView 支持 WebGL / OpenGL ES 2.0。
@@ -38,7 +38,7 @@ npm run serve
 ./build-android.ps1 -JavaHome 'C:/Program Files/Java/jdk-17' -SdkPath 'E:/APkMCJAVA/.android-sdk'
 ```
 
-输出 `dist/890Jump-Android9-12-v1.0.0-beta.1.apk`。不要上传 `.signing/` 或 `local.properties`。
+输出 `dist/890Jump-Android9-12-v1.0.0-beta.2.apk`。不要上传 `.signing/` 或 `local.properties`。
 
 ## 检查范围
 

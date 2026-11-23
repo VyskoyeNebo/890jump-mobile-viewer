@@ -44,8 +44,12 @@ export async function applyStockMaterials(root, data, attributes) {
     // The game stores linear specular reflectance (F0), rather than a metalness tint.
     if(spec){m.specularColor.copy(rgb(spec.map(v=>v/.04)));m.specularIntensity=1;}
     if(p.glass){
-      m.color.copy(rgb(p.color,[.09,.12,.15]));m.roughness=p.roughness??.15;m.metalness=p.metal??.1;
-      m.transparent=true;m.opacity=p.alpha??.62;m.depthWrite=false;m.side=THREE.DoubleSide;
+      // Fallback glass RGB is display-space tint, unlike linear game paint colors.
+      // Alpha blending exposes bright cabin surfaces and incorrectly turns black glass grey.
+      m.color.copy(rgb(p.color,[.09,.12,.15])).convertSRGBToLinear();
+      m.roughness=p.roughness??.15;m.metalness=0;
+      m.transparent=false;m.opacity=1;m.depthWrite=true;m.side=THREE.DoubleSide;
+      m.transmission=0;m.ior=1.5;m.specularIntensity=.35;
       return m;
     }
     m.opacity=p.alpha??1;m.alphaTest=p.alphaTest||0;

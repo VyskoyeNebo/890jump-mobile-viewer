@@ -27,9 +27,9 @@ try {
     & './android/gradlew.bat' :app:lintRelease :app:assembleRelease --console=plain
     if ($LASTEXITCODE -ne 0) { throw 'Android validation or build failed.' }
     New-Item -ItemType Directory -Path './dist' -Force | Out-Null
-    Copy-Item -LiteralPath './android/app/build/outputs/apk/release/app-release.apk' -Destination './dist/890Jump-Android9-12-v1.0.0-beta.1.apk' -Force
-    $hash=(Get-FileHash -LiteralPath './dist/890Jump-Android9-12-v1.0.0-beta.1.apk' -Algorithm SHA256).Hash.ToLowerInvariant()
-    [IO.File]::WriteAllText("$PSScriptRoot/dist/SHA256SUMS.txt","$hash  890Jump-Android9-12-v1.0.0-beta.1.apk`n")
+    Copy-Item -LiteralPath './android/app/build/outputs/apk/release/app-release.apk' -Destination './dist/890Jump-Android9-12-v1.0.0-beta.2.apk' -Force
+    $hash=(Get-FileHash -LiteralPath './dist/890Jump-Android9-12-v1.0.0-beta.2.apk' -Algorithm SHA256).Hash.ToLowerInvariant()
+    [IO.File]::WriteAllText("$PSScriptRoot/dist/SHA256SUMS.txt","$hash  890Jump-Android9-12-v1.0.0-beta.2.apk`n")
 } finally {
     Remove-Item Env:VIEWER_SIGN_PASSWORD -ErrorAction SilentlyContinue
     Pop-Location
